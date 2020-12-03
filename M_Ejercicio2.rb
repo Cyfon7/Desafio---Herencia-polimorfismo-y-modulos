@@ -61,7 +61,7 @@ class Animal
     end
 end
 
-module Aves
+# AVES
     class Ave < Animal
         include Habilidades::Caminante
     end
@@ -81,9 +81,9 @@ module Aves
         include Habilidades::Nadador
         include Alimentacion::Herbivoro
     end
-end
 
-module Mamiferos
+
+#MAMIFEROS
     class Mamifero < Animal
         include Habilidades::Caminante
     end
@@ -101,9 +101,8 @@ module Mamiferos
     class Vaca < Mamifero
         include Alimentacion::Herbivoro
     end
-end
 
-module Insectos 
+#INSECTOS
     class Insecto < Animal
         include Habilidades::Volador
         include Habilidades::Caminante
@@ -119,7 +118,4 @@ module Insectos
     
     class Abeja < Insecto
         include Alimentacion::Herbivoro
-    end    
-end
-
-
+    end 
